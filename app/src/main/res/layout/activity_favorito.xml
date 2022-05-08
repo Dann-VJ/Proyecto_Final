@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rosa"
+    android:weightSum="12"
+    tools:context=".FavoritoActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        // Se visualiza el contenido de la lista de deseos,
+        // la cual al precionar en el icono de corazon lo podras quitar de la
+        // lista
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/inecraft_xbox1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Minecraft - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$499"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.FavoritoSele"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_minexbox"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fallout76_ps4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Fallout 76 - PS4"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$599"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.FavoritoSele"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_falloutps4"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    // Se agrego el boton para poder borrar todo el contenido de la
+    // lista de deseos
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/danger"
+            android:text="Borrar Favoritos"
+            android:id="@+id/btn_borrar"/>
+
+    </LinearLayout>
+</LinearLayout>

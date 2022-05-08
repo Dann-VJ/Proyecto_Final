@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoActivity"
+    android:background="@color/rosa"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        // La vista historial de compras con botones para
+        // poder generar tu factura en formato pdf y xml
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/inecraft_xbox1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Minecraft - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="8dp">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="Factura:"
+
+                            android:layout_marginEnd="30dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                style="@style/Theme.Proyecto_Final.BotonAgregar"
+                                android:text="PDF"
+                                android:textSize="20dp"
+                                android:drawableEnd="@drawable/file"
+                                android:id="@+id/btn_pdf"/>
+                            <Button
+                                style="@style/Theme.Proyecto_Final.BotonAgregar"
+                                android:text="XML"
+                                android:textSize="20dp"
+                                android:drawableEnd="@drawable/file"
+                                android:id="@+id/btn_xml"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/elden_xbox" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Elden Ring - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="8dp">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="Factura:"
+
+                            android:layout_marginEnd="30dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                style="@style/Theme.Proyecto_Final.BotonAgregar"
+                                android:text="PDF"
+                                android:textSize="20dp"
+                                android:drawableEnd="@drawable/file"
+                                android:id="@+id/btn_pdf1"/>
+                            <Button
+                                style="@style/Theme.Proyecto_Final.BotonAgregar"
+                                android:text="XML"
+                                android:textSize="20dp"
+                                android:drawableEnd="@drawable/file"
+                                android:id="@+id/btn_xml1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fallout76_ps4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Fallout 76 - PS4"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="8dp">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="Factura:"
+
+                            android:layout_marginEnd="30dp"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                style="@style/Theme.Proyecto_Final.BotonAgregar"
+                                android:text="PDF"
+                                android:textSize="20dp"
+                                android:drawableEnd="@drawable/file"
+                                android:id="@+id/btn_pdf2"/>
+                            <Button
+                                style="@style/Theme.Proyecto_Final.BotonAgregar"
+                                android:text="XML"
+                                android:textSize="20dp"
+                                android:drawableEnd="@drawable/file"
+                                android:id="@+id/btn_xml2"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    // Poenemos un peso de 2 para todo la pantalla
+    // en el cual agregamos un boton para poder eliminar todo tu
+    // historial.
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/danger"
+            android:text="Borrar Historial"
+            android:id="@+id/btn_borrar"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

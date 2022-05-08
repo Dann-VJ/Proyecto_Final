@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatalogoActivity"
+    android:orientation="vertical"
+    android:weightSum="12"
+    android:background="@color/rosa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/inecraft_xbox1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Minecraft - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$499"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.Favorito"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_minexbox"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/inecraft_ps4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Minecraft - PS4"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$499"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.Favorito"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_mineps4"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fallout76_xbox"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Fallout 76 - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$599"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.Favorito"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_falloutxbox"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fallout76_ps4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Fallout 76 - PS4"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$599"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.Favorito"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_falloutps4"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/elden_xbox"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Elden Ring - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$499"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.Favorito"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_eldenxbox"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/elden_ps5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Minecraft - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$499"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+                        <ImageButton
+                            style="@style/Theme.Proyecto_Final.Favorito"
+                            android:src="@drawable/cards_heart"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonAgregar"
+                        android:text="Agregar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/cart24"
+                        android:id="@+id/btn_eldenps5"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="@color/gris"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                style="@style/Theme.Proyecto_Final.MenuIcon"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/home1"
+                android:id="@+id/btn_homeicon"/>
+
+            <ImageButton
+                style="@style/Theme.Proyecto_Final.MenuIcon"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/cards_heart"
+                android:id="@+id/btn_favicon"/>
+
+            <ImageButton
+                style="@style/Theme.Proyecto_Final.MenuIcon"
+                android:layout_marginEnd="40dp"
+                android:src="@drawable/cart"
+                android:id="@+id/btn_carticon"/>
+
+            <ImageButton
+                style="@style/Theme.Proyecto_Final.MenuIcon"
+                android:src="@drawable/account"
+                android:id="@+id/btn_profileicon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

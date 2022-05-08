@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/catalogo"
+        android:title="Catálogo"
+        android:orderInCategory="10"
+        app:showAsAction="always"
+        android:icon="@drawable/controller_classic"
+        android:iconTint="@color/rosa"/>
+
+    <item
+        android:id="@+id/sesion"
+        android:title="Iniciar Sesión"
+        android:orderInCategory="20"
+        app:showAsAction="always"
+        android:icon="@drawable/account"
+        android:iconTint="@color/rosa"/>
+
+    <item
+        android:id="@+id/favorito"
+        android:title="Lista de deseos"
+        android:orderInCategory="5"
+        app:showAsAction="always"
+        android:icon="@drawable/heart"
+        android:iconTint="@color/rosa"/>
+
+    <!-- Agregamos un componente de navegación dentro de res -->
+</menu>

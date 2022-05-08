@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_public"
+    app:startDestination="@id/CatalogoFragment">
+
+    <!-- Agregamos los fragmentos -->
+    <fragment
+        android:id="@+id/CarritoFragment"
+        android:name="com.example.proyecto_final.pub.fragments.CarritoFragment"
+        tools:layout="@layout/fragment_carrito"
+        android:label="Carrito"/>
+
+    <fragment
+        android:id="@+id/CatalogoFragment"
+        android:name="com.example.proyecto_final.pub.fragments.CatalogoFragment"
+        tools:layout="@layout/fragment_catalogo"
+        android:label="Catálogo"/>
+
+    <fragment
+        android:id="@+id/FavoritoFragment"
+        android:name="com.example.proyecto_final.pub.fragments.FavoritoFragment"
+        tools:layout="@layout/fragment_favorito"
+        android:label="Favorito"/>
+
+    <fragment
+        android:id="@+id/RegistroFragment"
+        android:name="com.example.proyecto_final.pub.fragments.RegistroFragment"
+        tools:layout="@layout/fragment_registro"
+        android:label="Registro"/>
+
+    <fragment
+        android:id="@+id/SesionFragment"
+        android:name="com.example.proyecto_final.pub.fragments.SesionFragment"
+        tools:layout="@layout/fragment_sesion"
+        android:label="Inicia sesión"/>
+
+</navigation>

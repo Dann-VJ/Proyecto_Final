@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity"
+    android:orientation="vertical"
+    android:background="@color/rosa"
+    android:weightSum="12">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="6">
+
+        // Imagen de fondo
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/retro"
+            android:scaleType="centerCrop"/>
+
+        // Imagen de perfil
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/avatar"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="-70dp" />
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="12dp">
+
+            // El nombre de usuario
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre: "
+                android:textColor="@color/negro2"
+                android:textSize="25dp"
+                android:layout_marginVertical="8dp"/>
+
+            // Correo de usuario
+            <TextView
+                android:id="@+id/tv_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo: "
+                android:textColor="@color/negro2"
+                android:layout_marginVertical="8dp"
+                android:textSize="25dp" />
+
+            // Campo para poder editar mi contraseña
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Editar contraseña"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                android:layout_marginVertical="8dp"
+                app:endIconMode="clear_text"
+                app:helperText="Editar contraseña"
+                app:startIconDrawable="@drawable/lock"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            // Nos llevara al historial del usuario
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Historial de Pedidos"
+                android:textColor="@color/naranja"
+                app:cornerRadius="16dp"
+                android:id="@+id/mtb_historial"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

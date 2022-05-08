@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoActivity"
+    android:background="@color/rosa"
+    android:orientation="vertical"
+    android:weightSum="12">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_weight="10">
+        // Nos muestra una liata con todos los porductos
+        // Con una iamgen, el texto, precio y el boton para eliminar
+        // el producto
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/inecraft_xbox1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Minecraft - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$499"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonEliminar"
+                        android:text="Eliminar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/delete"
+                        android:id="@+id/btn_minexbox"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/elden_xbox"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Elden Ring - Xbox"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$1,199"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonEliminar"
+                        android:text="Eliminar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/delete"
+                        android:id="@+id/btn_eldenxbox"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fallout76_ps4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Theme.Proyecto_Final.TextProducto"
+                        android:text="Fallout 76 - PS4"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/Theme.Proyecto_Final.TextProducto"
+                            android:text="$599"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="30dp"/>
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        style="@style/Theme.Proyecto_Final.BotonEliminar"
+                        android:text="Eliminar"
+                        android:textSize="20dp"
+                        android:drawableEnd="@drawable/delete"
+                        android:id="@+id/btn_falloutps4"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    // LinearLayout con un peso de 2 nos muestra el total a pagar
+    // y el boton para realizar la compra
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/gris"
+        android:layout_weight="2"
+        android:weightSum="12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/naranja"
+            android:text="Total a pagar"
+            style="@style/Theme.Proyecto_Final.TextProducto"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:weightSum="12">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="$2,297"
+                android:textColor="@color/naranja"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="6"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pagar"
+                android:drawableEnd="@drawable/cart24"
+                android:layout_weight="6"
+                style="@style/Theme.Proyecto_Final.BotonAgregar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
